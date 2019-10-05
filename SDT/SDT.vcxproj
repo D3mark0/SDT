@@ -152,12 +152,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Airplane.cpp" />
+    <ClCompile Include="Array.cpp" />
+    <ClCompile Include="Element.cpp" />
     <ClCompile Include="SDT.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="Transport.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Airplane.h" />
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="Element.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="Transport.h" />
   </ItemGroup>

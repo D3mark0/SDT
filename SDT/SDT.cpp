@@ -8,12 +8,17 @@ using namespace std;
 #include "Transport.h"
 #include "Train.h"
 #include "Airplane.h"
+#include "Element.h"
+#include "Array.h"
 
 int main()
 {
 	srand((unsigned)time(NULL));
 
-	Transport A;
+	Transport B(3, 5);
+	Array A();
+
+	/*Transport A;
 	Transport B(3, 5);
 	Transport C(B);
 	Transport D;
@@ -47,7 +52,7 @@ int main()
 	A2.Out();
 	B2.Out();
 	C2.Out();
-	D2.Out();
+	D2.Out();*/
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
