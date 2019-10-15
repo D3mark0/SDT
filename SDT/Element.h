@@ -7,12 +7,13 @@ class Element
 	Element *e;
 public:
 	Element();
-	Element(Transport T);
-	Element(const Element& E);
 
-	void set_t(Transport T) { this->t = &T; }
-	Transport *get_t() const { return t; }
-	void set_e(Element E) { this->e = &E; }
-	Element *get_e() const { return e; }
+	void set_t(Transport* T) { t = T; }
+	Transport* get_t() const { return t; }
+	void set_e(Element* E) { e = E; }
+	Element* get_e() const { return e; }
+
+	void Out();
+	void Clear();
 };
 

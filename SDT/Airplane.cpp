@@ -4,24 +4,13 @@ using namespace std;
 
 Airplane::Airplane()
 {
-	range = rand() & 101;
-	carrying = rand() & 101;
-}
-
-Airplane::Airplane(double RANGE, double CARRYING)
-{
-	range = RANGE;
-	carrying = CARRYING;
-}
-
-Airplane::Airplane(const Airplane& A)
-{
-	range = A.range;
-	carrying = A.carrying;
+	range = 0;
+	carrying = 0;
 }
 
 void Airplane::In()
 {
+	Transport::In();
 	cout << "\nRange: ";
 	cin >> range;
 	cout << "\nCarrying: ";
@@ -31,6 +20,7 @@ void Airplane::In()
 
 void Airplane::Out() const
 {
-	cout << "\nRange: " << range << "\nCarrying: " << carrying;
+	cout << "\n***Airplane***\nRange: " << range << "\nCarrying: " << carrying;
+	Transport::Out();
 	return;
 }

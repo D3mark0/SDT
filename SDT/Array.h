@@ -5,14 +5,13 @@
 class Array
 {
 	static const int n = 7;
-	Element *array[n];
+	Element* array[n];
 
-	int Hash(Element E);
+	int Hash(Element* E);
 public:
 	Array();
-	~Array();
 
-	void Add(Transport T);
-	Transport* Show(int speed, int distance);
+	void Add(Transport* T);
+	void Out();
+	void Clear();
 };
-

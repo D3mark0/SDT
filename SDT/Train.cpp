@@ -4,21 +4,12 @@ using namespace std;
 
 Train::Train()
 {
-	quantity = rand() & 101;
-}
-
-Train::Train(double QUANTITY)
-{
-	quantity = QUANTITY;
-}
-
-Train::Train(const Train& T)
-{
-	quantity = T.quantity;
+	quantity = 0;
 }
 
 void Train::In()
 {
+	Transport::In();
 	cout << "\nQuantity: ";
 	cin >> quantity;
 	return;
@@ -26,6 +17,7 @@ void Train::In()
 
 void Train::Out() const
 {
-	cout << "\nQuantity: " << quantity;
+	cout << "\n***Train***\nQuantity: " << quantity;
+	Transport::Out();
 	return;
 }

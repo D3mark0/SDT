@@ -3,56 +3,35 @@
 
 #include <iostream>
 using namespace std;
-#include<stdlib.h>
-#include<time.h>
 #include "Transport.h"
 #include "Train.h"
 #include "Airplane.h"
 #include "Element.h"
 #include "Array.h"
 
-int main()
+int main(int argc, char* argv[])
 {
-	srand((unsigned)time(NULL));
+	/*if (argc != 3)
+	{
+		cout << "\nArguments Error";
+		return 0;
+	}*/
 
-	Transport B(3, 5);
-	Array A();
-
-	/*Transport A;
-	Transport B(3, 5);
-	Transport C(B);
-	Transport D;
-
-	D.In();
-
+	Array A;
+	Transport B1;
+	Train B2;
+	Airplane B3;
+	B1.In();
+	B2.In();
+	B3.In();
+	A.Add(&B1);
+	A.Add(&B2);
+	A.Add(&B3);
 	A.Out();
-	B.Out();
-	C.Out();
-	D.Out();
-
-	Train A1;
-	Train B1(9);
-	Train C1(B1);
-	Train D1;
-
-	D1.In();
-
-	A1.Out();
-	B1.Out();
-	C1.Out();
-	D1.Out();
-
-	Airplane A2;
-	Airplane B2(12, 13);
-	Airplane C2(B2);
-	Airplane D2;
-
-	D2.In();
-
-	A2.Out();
-	B2.Out();
-	C2.Out();
-	D2.Out();*/
+	//Transport B1;
+	//B1.In();
+	//cout << "\n" << B1.get_speed();
+	return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

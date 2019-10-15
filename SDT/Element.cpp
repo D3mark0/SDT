@@ -6,14 +6,19 @@ Element::Element()
 	e = nullptr;
 }
 
-Element::Element(Transport T)
-{
-	t = &T;
-	e = nullptr;
+void Element::Out() {
+	if (t != nullptr) {
+		t->Out();
+	}
+	if (e != nullptr) {
+		e->Out();
+	}
 }
 
-Element::Element(const Element& E)
-{
-	t = E.t;
-	e = E.e;
+void Element::Clear() {
+	if (e != nullptr) {
+		e->Clear();
+		delete e;
+	}
+	delete t;
 }

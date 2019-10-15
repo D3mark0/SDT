@@ -3,11 +3,9 @@
 class Train :
 	public Transport
 {
-	double quantity;
+	int quantity;
 public:
 	Train();
-	Train(double QUANTITY);
-	Train(const Train& T);
 
 	void In();
 	void Out()const;

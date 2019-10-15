@@ -4,20 +4,8 @@ using namespace std;
 
 Transport::Transport()
 {
-	speed = rand() & 101;
-	distance = rand() & 101;
-}
-
-Transport::Transport(double SPEED, double DISTANCE)
-{
-	speed = SPEED;
-	distance = DISTANCE;
-}
-
-Transport::Transport(const Transport& T)
-{
-	speed = T.speed;
-	distance = T.distance;
+	speed = 0;
+	distance = 0;
 }
 
 void Transport::In()

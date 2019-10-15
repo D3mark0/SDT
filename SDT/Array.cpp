@@ -1,36 +1,45 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
 #include "Array.h"
 
-int Array::Hash(Element E)
+int Array::Hash(Element* E)
 {
-	Transport *t = E.get_t();
-	int hash = (*t).get_speed % 7;
+	Transport* t = E->get_t();
+	int hash = t->get_speed() % n;
 	return hash;
 }
 
 Array::Array()
 {
 	for (int i = 0; i < n; i++)
-		array[i] = &Element();
+		array[i] = nullptr;
 }
 
-Array::~Array()
+void Array::Clear()
 {
-	delete[] array;
-}
-
-void Array::Add(Transport T)
-{
-	Element E(T);
-	int hash = Hash(E);
-	if (array[hash]->get_e == nullptr)
-		array[hash] = &E;
-	else
+	for (int i = 0; i < n; i++)
 	{
-		Element* search;
-		search = array[hash];
-		while (search->get_e != nullptr)
-			search = &search->get_e;
+		if (array[i] != nullptr)
+			array[i]->Clear();
+	}
+}
 
-		&search->set_e = search;
+void Array::Add(Transport* T)
+{
+	Element* E = new Element;
+	E->set_t(T);
+	int hash = Hash(E);
+	E->set_e(array[hash]);
+	array[hash] = E;
+}
+
+void Array::Out() {
+	for (int i = 0; i < n; i++) {
+		if (array[i] != nullptr) {
+			cout << "\n\n---" << i << " element---" << endl;
+			array[i]->Out();
+		}
 	}
 }
