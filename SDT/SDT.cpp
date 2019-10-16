@@ -11,26 +11,26 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	/*if (argc != 3)
+	if (argc != 3)
 	{
-		cout << "\nArguments Error";
-		return 0;
-	}*/
+		cout << "\nIncorrect command line!\nWaited: command in_file out_file" << endl;
+		exit(1);
+	}
+
+	ifstream in(argv[1]); 
+	ofstream out(argv[2]);
+
+	cout << "Start" << endl;
 
 	Array A;
-	Transport B1;
-	Train B2;
-	Airplane B3;
-	B1.In();
-	B2.In();
-	B3.In();
-	A.Add(&B1);
-	A.Add(&B2);
-	A.Add(&B3);
-	A.Out();
-	//Transport B1;
-	//B1.In();
-	//cout << "\n" << B1.get_speed();
+	A.In(in);
+	out << "Fill";
+	A.Out(out);
+	A.Clear();
+	out << "\n\nEmpty" << endl;
+
+	cout << "Finish" << endl;
+
 	return 0;
 }
 

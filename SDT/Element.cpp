@@ -6,12 +6,12 @@ Element::Element()
 	e = nullptr;
 }
 
-void Element::Out() {
+void Element::Out(ofstream& out) {
 	if (t != nullptr) {
-		t->Out();
+		t->Out(out);
 	}
 	if (e != nullptr) {
-		e->Out();
+		e->Out(out);
 	}
 }
 

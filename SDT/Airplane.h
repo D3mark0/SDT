@@ -8,7 +8,7 @@ class Airplane :
 public:
 	Airplane();
 
-	void In();
-	void Out()const;
+	void In(ifstream& in);
+	void Out(ofstream& out)const;
 };
 

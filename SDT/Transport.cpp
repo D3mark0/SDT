@@ -1,6 +1,9 @@
 #include<iostream>
+#include<fstream>
 using namespace std;
 #include "Transport.h"
+#include "Train.h"
+#include "Airplane.h"
 
 Transport::Transport()
 {
@@ -8,17 +11,32 @@ Transport::Transport()
 	distance = 0;
 }
 
-void Transport::In()
+Transport* Transport::Create(ifstream& in)
 {
-	cout << "\nSpeed: ";
-	cin >> speed;
-	cout << "\nDistance: ";
-	cin >> distance;
-	return;
+	Transport* T;
+	int k;
+	in >> k;
+	switch (k) {
+		case 1:
+			T = new Train;
+			break;
+		case 2:
+			T = new Airplane;
+			break;
+		default:
+			return 0;
+	}
+
+	T->In(in);
+	return T;
 }
 
-void Transport::Out() const
+void Transport::In(ifstream& in)
 {
-	cout << "\nSpeed: " << speed << "\nDistance: " << distance;
-	return;
+	in >> speed >> distance;
+}
+
+void Transport::Out(ofstream& out) const
+{
+	out << "\nSpeed: " << speed << "\nDistance: " << distance;
 }

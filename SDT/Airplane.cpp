@@ -1,4 +1,5 @@
 #include<iostream>
+#include<fstream>
 using namespace std;
 #include "Airplane.h"
 
@@ -8,19 +9,14 @@ Airplane::Airplane()
 	carrying = 0;
 }
 
-void Airplane::In()
+void Airplane::In(ifstream& in)
 {
-	Transport::In();
-	cout << "\nRange: ";
-	cin >> range;
-	cout << "\nCarrying: ";
-	cin >> carrying;
-	return;
+	Transport::In(in);
+	in >> range >> carrying;
 }
 
-void Airplane::Out() const
+void Airplane::Out(ofstream& out) const
 {
-	cout << "\n***Airplane***\nRange: " << range << "\nCarrying: " << carrying;
-	Transport::Out();
-	return;
+	out << "\n***Airplane***\nRange: " << range << "\nCarrying: " << carrying;
+	Transport::Out(out);
 }

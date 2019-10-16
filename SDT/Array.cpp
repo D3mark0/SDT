@@ -35,11 +35,21 @@ void Array::Add(Transport* T)
 	array[hash] = E;
 }
 
-void Array::Out() {
+void Array::In(ifstream& in)
+{
+	Transport* T = nullptr;
+
+	while (!in.eof()) { 
+		T = T->Create(in);
+		Add(T);
+	}
+}
+
+void Array::Out(ofstream& out) {
 	for (int i = 0; i < n; i++) {
 		if (array[i] != nullptr) {
-			cout << "\n\n---" << i << " element---" << endl;
-			array[i]->Out();
+			out << "\n\n---" << i << " element---" << endl;
+			array[i]->Out(out);
 		}
 	}
 }

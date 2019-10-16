@@ -13,7 +13,7 @@ public:
 	void set_e(Element* E) { e = E; }
 	Element* get_e() const { return e; }
 
-	void Out();
+	void Out(ofstream& out);
 	void Clear();
 };
 

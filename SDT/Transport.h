@@ -1,3 +1,5 @@
+#include<fstream>
+using namespace std;
 #pragma once
 class Transport
 {
@@ -11,6 +13,8 @@ public:
 	void set_distance(int distance) { this->distance = distance; }
 	int get_distance() const { return distance; }
 
-	virtual void In();
-	virtual void Out()const;
+	virtual void In(ifstream& in);
+	virtual void Out(ofstream& out)const;
+
+	Transport* Create(ifstream& in);
 };

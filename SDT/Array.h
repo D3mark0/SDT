@@ -12,6 +12,9 @@ public:
 	Array();
 
 	void Add(Transport* T);
-	void Out();
+	void In(ifstream& in);
+	void Out(ofstream& out);
 	void Clear();
+
+	//~Array() {Clear();};
 };
