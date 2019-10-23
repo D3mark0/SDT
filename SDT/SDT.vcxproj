@@ -155,6 +155,7 @@
     <ClCompile Include="Array.cpp" />
     <ClCompile Include="Element.cpp" />
     <ClCompile Include="SDT.cpp" />
+    <ClCompile Include="Ship.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="Transport.cpp" />
   </ItemGroup>
@@ -162,6 +163,7 @@
     <ClInclude Include="Airplane.h" />
     <ClInclude Include="Array.h" />
     <ClInclude Include="Element.h" />
+    <ClInclude Include="Ship.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="Transport.h" />
   </ItemGroup>

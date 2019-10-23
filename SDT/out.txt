@@ -9,6 +9,11 @@ Distance: 2
 
 ---2 element---
 
+***Ship***
+Water: 5
+Type: Yacht
+Speed: 2
+Distance: 4
 ***Airplane***
 Range: 5
 Carrying: 6
