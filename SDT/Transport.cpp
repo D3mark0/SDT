@@ -31,6 +31,11 @@ Transport* Transport::Create(ifstream& in)
 	return T;
 }
 
+double Transport::PerfectTime()
+{
+	return (1.0 * distance) / (1.0 * speed);
+}
+
 void Transport::In(ifstream& in)
 {
 	in >> speed >> distance;

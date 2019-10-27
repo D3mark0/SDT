@@ -17,4 +17,6 @@ public:
 	virtual void Out(ofstream& out)const;
 
 	Transport* Create(ifstream& in);
+
+	double PerfectTime();
 };
