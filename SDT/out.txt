@@ -15,4 +15,14 @@ Carrying: 6
 Speed: 2
 Distance: 3
 
+Perfect time
+
+---1 element---
+
+Perfect time: 2
+
+---2 element---
+
+Perfect time: 1.5
+
 Empty

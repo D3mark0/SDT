@@ -15,5 +15,7 @@ public:
 
 	void Out(ofstream& out);
 	void Clear();
+
+	void PerfectTime(ofstream& out);
 };
 

@@ -22,3 +22,13 @@ void Element::Clear() {
 	}
 	delete t;
 }
+
+void Element::PerfectTime(ofstream& out)
+{
+	if (t != nullptr) {
+		out << "\nPerfect time: " << t->PerfectTime();
+	}
+	if (e != nullptr) {
+		e->Out(out);
+	}
+}

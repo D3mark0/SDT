@@ -26,8 +26,10 @@ int main(int argc, char* argv[])
 	A.In(in);
 	out << "Fill";
 	A.Out(out);
+	out << "\n\nPerfect time";
+	A.PerfectTime(out);
 	A.Clear();
-	out << "\n\nEmpty" << endl;
+	out << "\n\nEmpty";
 
 	cout << "Finish" << endl;
 

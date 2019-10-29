@@ -26,6 +26,16 @@ void Array::Clear()
 	}
 }
 
+void Array::PerfectTime(ofstream& out)
+{
+	for (int i = 0; i < n; i++) {
+		if (array[i] != nullptr) {
+			out << "\n\n---" << i << " element---" << endl;
+			array[i]->PerfectTime(out);
+		}
+	}
+}
+
 void Array::Add(Transport* T)
 {
 	Element* E = new Element;

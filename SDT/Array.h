@@ -16,5 +16,5 @@ public:
 	void Out(ofstream& out);
 	void Clear();
 
-	//~Array() {Clear();};
+	void PerfectTime(ofstream& out);
 };
