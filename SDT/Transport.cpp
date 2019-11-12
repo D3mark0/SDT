@@ -9,6 +9,7 @@ Transport::Transport()
 {
 	speed = 0;
 	distance = 0;
+	weight = 0;
 }
 
 Transport* Transport::Create(ifstream& in)
@@ -33,10 +34,10 @@ Transport* Transport::Create(ifstream& in)
 
 void Transport::In(ifstream& in)
 {
-	in >> speed >> distance;
+	in >> speed >> distance >> weight;
 }
 
 void Transport::Out(ofstream& out) const
 {
-	out << "\nSpeed: " << speed << "\nDistance: " << distance;
+	out << "\nSpeed: " << speed << "\nDistance: " << distance << "\nWeight: " << weight;
 }

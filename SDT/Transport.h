@@ -5,6 +5,7 @@ class Transport
 {
 	int speed;
 	int distance;
+	double weight;
 public:
 	Transport();
 
