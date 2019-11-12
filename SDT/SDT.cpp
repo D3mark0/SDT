@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 	Array A;
 	A.In(in);
 	out << "Fill";
-	A.Out(out);
+	A.AirplaneOut(out);
 	A.Clear();
 	out << "\n\nEmpty" << endl;
 

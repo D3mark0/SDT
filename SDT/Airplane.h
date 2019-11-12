@@ -10,5 +10,6 @@ public:
 
 	void In(ifstream& in);
 	void Out(ofstream& out)const;
+	int ClassCheck() { return 0; }
 };
 

@@ -2,10 +2,6 @@ Fill
 
 ---1 element---
 
-***Train***
-Quantity: 3
-Speed: 1
-Distance: 2
 
 ---2 element---
 

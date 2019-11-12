@@ -16,5 +16,7 @@ public:
 	void Out(ofstream& out);
 	void Clear();
 
+	void AirplaneOut(ofstream& out);
+
 	//~Array() {Clear();};
 };

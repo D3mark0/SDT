@@ -15,6 +15,7 @@ public:
 
 	virtual void In(ifstream& in);
 	virtual void Out(ofstream& out)const;
+	virtual int ClassCheck() { return -1; };
 
 	Transport* Create(ifstream& in);
 };

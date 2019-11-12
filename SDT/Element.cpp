@@ -15,6 +15,18 @@ void Element::Out(ofstream& out) {
 	}
 }
 
+void Element::AirplaneOut(ofstream& out)
+{
+	if (t != nullptr) {
+		if (t->ClassCheck() == 0) {
+			t->Out(out);
+		}
+	}
+	if (e != nullptr) {
+		e->Out(out);
+	}
+}
+
 void Element::Clear() {
 	if (e != nullptr) {
 		e->Clear();
