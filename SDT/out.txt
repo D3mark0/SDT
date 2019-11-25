@@ -25,4 +25,6 @@ Perfect time: 2
 
 Perfect time: 1.5
 
+Sort
+
 Empty

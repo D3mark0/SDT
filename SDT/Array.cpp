@@ -36,6 +36,22 @@ void Array::PerfectTime(ofstream& out)
 	}
 }
 
+void Array::Sort()
+{
+	Element* temp[n];
+
+	for (int i = 0; i < n; i++) {
+		temp[i] = array[i];
+		array[i] = nullptr;
+	}
+
+	for (int i = 0; i < n; i++) {
+		if (temp[i] != nullptr) {
+			temp[i]->Sort(array[i], n);
+		}
+	}
+}
+
 void Array::Add(Transport* T)
 {
 	Element* E = new Element;
