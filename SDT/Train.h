@@ -9,5 +9,9 @@ public:
 
 	void In(ifstream& in);
 	void Out(ofstream& out)const;
+
+	virtual void MultiMethod(Transport* other, ofstream& out);
+	virtual void MMAirplane(ofstream& out);
+	virtual void MMTrain(ofstream& out);
 };
 

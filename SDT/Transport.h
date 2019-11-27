@@ -17,4 +17,8 @@ public:
 	virtual void Out(ofstream& out)const;
 
 	Transport* Create(ifstream& in);
+
+	virtual void MultiMethod(Transport* other, ofstream& out) = 0; 
+	virtual void MMAirplane(ofstream& out) = 0; 
+	virtual void MMTrain(ofstream& out) = 0;
 };
