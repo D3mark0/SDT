@@ -35,3 +35,8 @@ void Airplane::MMTrain(ofstream& out)
 {
 	out << "\nTrain and Airplane" << endl;
 }
+
+void Airplane::MMShip(ofstream& out)
+{
+	out << "\nShip and Airplane" << endl;
+}

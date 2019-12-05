@@ -9,6 +9,11 @@ Distance: 2
 
 ---2 element---
 
+***Ship***
+Water: 5
+Type: Yacht
+Speed: 2
+Distance: 4
 ***Airplane***
 Range: 5
 Carrying: 6
@@ -19,11 +24,11 @@ MultiMethod:
 
 Train and Train
 
-Train and Airplane
+Train and Ship
 
-Airplane and Train
+Ship and Train
 
-Airplane and Airplane
+Ship and Ship
 
 
 Empty

@@ -13,5 +13,6 @@ public:
 	virtual void MultiMethod(Transport* other, ofstream& out);
 	virtual void MMAirplane(ofstream& out);
 	virtual void MMTrain(ofstream& out);
+	virtual void MMShip(ofstream& out);
 };
 

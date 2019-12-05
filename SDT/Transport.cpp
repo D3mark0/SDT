@@ -4,6 +4,7 @@ using namespace std;
 #include "Transport.h"
 #include "Train.h"
 #include "Airplane.h"
+#include "Ship.h"
 
 Transport::Transport()
 {
@@ -22,6 +23,9 @@ Transport* Transport::Create(ifstream& in)
 			break;
 		case 2:
 			T = new Airplane;
+			break;
+		case 3:
+			T = new Ship;
 			break;
 		default:
 			return 0;
