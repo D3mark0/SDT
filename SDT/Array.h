@@ -17,5 +17,4 @@ public:
 	void Clear();
 
 	void PerfectTime(ofstream& out);
-	void Sort();
 };
