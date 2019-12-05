@@ -3,9 +3,17 @@ Fill
 ---1 element---
 
 ***Train***
+Quantity: 5
+Speed: 1
+Distance: 8
+***Train***
+Quantity: 4
+Speed: 1
+Distance: 9
+***Train***
 Quantity: 3
 Speed: 1
-Distance: 2
+Distance: 10
 
 ---2 element---
 
@@ -19,7 +27,46 @@ Perfect time
 
 ---1 element---
 
-Perfect time: 2
+Perfect time: 8
+Perfect time: 9
+Perfect time: 10
+
+---2 element---
+
+Perfect time: 1.5
+
+Sort
+
+---1 element---
+
+***Train***
+Quantity: 5
+Speed: 1
+Distance: 8
+***Train***
+Quantity: 4
+Speed: 1
+Distance: 9
+***Train***
+Quantity: 3
+Speed: 1
+Distance: 10
+
+---2 element---
+
+***Airplane***
+Range: 5
+Carrying: 6
+Speed: 2
+Distance: 3
+
+Perfect time
+
+---1 element---
+
+Perfect time: 8
+Perfect time: 9
+Perfect time: 10
 
 ---2 element---
 

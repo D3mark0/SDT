@@ -29,6 +29,6 @@ void Element::PerfectTime(ofstream& out)
 		out << "\nPerfect time: " << t->PerfectTime();
 	}
 	if (e != nullptr) {
-		e->Out(out);
+		e->PerfectTime(out);
 	}
 }

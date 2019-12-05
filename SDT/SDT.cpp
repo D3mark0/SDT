@@ -28,6 +28,11 @@ int main(int argc, char* argv[])
 	A.Out(out);
 	out << "\n\nPerfect time";
 	A.PerfectTime(out);
+	out << "\n\nSort";
+	A.Sort();
+	A.Out(out);
+	out << "\n\nPerfect time";
+	A.PerfectTime(out);
 	A.Clear();
 	out << "\n\nEmpty";
 
