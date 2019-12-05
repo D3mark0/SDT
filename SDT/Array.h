@@ -16,5 +16,7 @@ public:
 	void Out(ofstream& out);
 	void Clear();
 
+	void MultiMethod(ofstream& out);
+
 	//~Array() {Clear();};
 };

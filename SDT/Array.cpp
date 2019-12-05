@@ -26,6 +26,16 @@ void Array::Clear()
 	}
 }
 
+void Array::Out(ofstream& out)
+{
+	for (int i = 0; i < n; i++) {
+		if (array[i] != nullptr) {
+			out << "\n\n---" << i << " element---" << endl;
+			array[i]->Out(out);
+		}
+	}
+}
+
 void Array::Add(Transport* T)
 {
 	Element* E = new Element;
@@ -45,11 +55,19 @@ void Array::In(ifstream& in)
 	}
 }
 
-void Array::Out(ofstream& out) {
+void Array::MultiMethod(ofstream& out) {
+	Transport* element1;
+	Transport* element2;
+	out << "\n\nMultiMethod:" << endl;
 	for (int i = 0; i < n; i++) {
 		if (array[i] != nullptr) {
-			out << "\n\n---" << i << " element---" << endl;
-			array[i]->Out(out);
+			element1 = array[i]->get_t();
+			for (int j = 0; j < n; j++) {
+				if (array[j] != nullptr) {
+					element2 = array[j]->get_t();
+					element1->MultiMethod(element2, out);
+				}
+			}
 		}
 	}
 }

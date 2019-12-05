@@ -26,6 +26,7 @@ int main(int argc, char* argv[])
 	A.In(in);
 	out << "Fill";
 	A.Out(out);
+	A.MultiMethod(out);
 	A.Clear();
 	out << "\n\nEmpty" << endl;
 

@@ -15,4 +15,15 @@ Carrying: 6
 Speed: 2
 Distance: 3
 
+MultiMethod:
+
+Train and Train
+
+Train and Airplane
+
+Airplane and Train
+
+Airplane and Airplane
+
+
 Empty
