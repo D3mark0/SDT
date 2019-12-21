@@ -3,9 +3,10 @@
 class Airplane :
 	public Transport
 {
+public:
 	int range;
 	int carrying;
-public:
+
 	Airplane();
 
 	void In(ifstream& in);

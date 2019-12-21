@@ -3,8 +3,9 @@
 class Train :
 	public Transport
 {
-	int quantity;
 public:
+	int quantity;
+
 	Train();
 
 	void In(ifstream& in);

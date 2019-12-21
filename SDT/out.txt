@@ -15,4 +15,19 @@ Carrying: 6
 Speed: 2
 Distance: 3
 
+---3 element---
+
+***Airplane***
+Range: 7
+Carrying: 8
+Speed: 3
+Distance: 5
+
+---5 element---
+
+***Train***
+Quantity: 4
+Speed: 5
+Distance: 5
+
 Empty

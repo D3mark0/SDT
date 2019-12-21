@@ -6,8 +6,8 @@ using namespace std;
 
 int Array::Hash(Element* E)
 {
-	Transport* t = E->get_t();
-	int hash = t->get_speed() % n;
+	Transport* t = E->t;
+	int hash = t->speed % n;
 	return hash;
 }
 
@@ -29,9 +29,9 @@ void Array::Clear()
 void Array::Add(Transport* T)
 {
 	Element* E = new Element;
-	E->set_t(T);
+	E->t = T;
 	int hash = Hash(E);
-	E->set_e(array[hash]);
+	E->e = array[hash];
 	array[hash] = E;
 }
 

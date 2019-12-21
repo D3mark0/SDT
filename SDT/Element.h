@@ -3,15 +3,11 @@
 
 class Element
 {
-	Transport *t;
-	Element *e;
 public:
-	Element();
+	Transport* t;
+	Element* e;
 
-	void set_t(Transport* T) { t = T; }
-	Transport* get_t() const { return t; }
-	void set_e(Element* E) { e = E; }
-	Element* get_e() const { return e; }
+	Element();
 
 	void Out(ofstream& out);
 	void Clear();
