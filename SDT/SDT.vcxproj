@@ -154,6 +154,7 @@
     <ClCompile Include="Airplane.cpp" />
     <ClCompile Include="Array.cpp" />
     <ClCompile Include="Element.cpp" />
+    <ClCompile Include="PerfectTime.cpp" />
     <ClCompile Include="SDT.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="Transport.cpp" />
