@@ -14,7 +14,7 @@ void Train::In(ifstream& in)
 	in >> quantity;
 }
 
-void Train::Out(ofstream& out) const
+void Train::Out(ofstream& out)
 {
 	out << "\n***Train***\nQuantity: " << quantity;
 	Transport::Out(out);

@@ -40,7 +40,7 @@ void Array::In(ifstream& in)
 	Transport* T = nullptr;
 
 	while (!in.eof()) { 
-		T = T->Create(in);
+		T = TransportFactory::In(in);
 		Add(T);
 	}
 }

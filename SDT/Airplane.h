@@ -10,6 +10,17 @@ public:
 	Airplane();
 
 	void In(ifstream& in);
-	void Out(ofstream& out)const;
+	void Out(ofstream& out);
 };
 
+class AirplaneFactory : public TransportFactory {
+public:
+	AirplaneFactory() :TransportFactory(1) { }
+
+	Transport* Create(int key) {
+		if (key == mark)
+			return new Airplane;
+		else
+			return nullptr;
+	}
+};

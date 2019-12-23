@@ -10,7 +10,19 @@ public:
 	Transport();
 
 	virtual void In(ifstream& in);
-	virtual void Out(ofstream& out)const;
+	virtual void Out(ofstream& out);
+};
 
-	Transport* Create(ifstream& in);
+class TransportFactory
+{
+public:
+	TransportFactory(int m);
+	static Transport* Make(int key);
+	static Transport* In(ifstream& in);
+	virtual Transport* Create(int key) = 0;
+
+protected:
+	int mark;
+	static TransportFactory* top;
+	TransportFactory* next;
 };

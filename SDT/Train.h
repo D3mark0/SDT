@@ -9,6 +9,17 @@ public:
 	Train();
 
 	void In(ifstream& in);
-	void Out(ofstream& out)const;
+	void Out(ofstream& out);
 };
 
+class TrainFactory : public TransportFactory {
+public:
+	TrainFactory() :TransportFactory(2) { }
+
+	Transport* Create(int key) {
+		if (key == mark)
+			return new Train;
+		else
+			return nullptr;
+	}
+};

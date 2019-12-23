@@ -15,7 +15,7 @@ void Airplane::In(ifstream& in)
 	in >> range >> carrying;
 }
 
-void Airplane::Out(ofstream& out) const
+void Airplane::Out(ofstream& out)
 {
 	out << "\n***Airplane***\nRange: " << range << "\nCarrying: " << carrying;
 	Transport::Out(out);
