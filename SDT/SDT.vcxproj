@@ -157,6 +157,7 @@
     <ClCompile Include="SDT.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="Transport.cpp" />
+    <ClCompile Include="WeightDecorator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Airplane.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="Element.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="Transport.h" />
+    <ClInclude Include="WeightDecorator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
