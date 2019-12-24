@@ -46,4 +46,22 @@ Perfect time: 1.66667
 
 Perfect time: 1
 
+Sort
+
+---1 element---
+
+Perfect time: 2
+
+---2 element---
+
+Perfect time: 1.5
+
+---3 element---
+
+Perfect time: 1.66667
+
+---5 element---
+
+Perfect time: 1
+
 Empty

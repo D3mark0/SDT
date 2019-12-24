@@ -10,6 +10,7 @@ using namespace std;
 #include "Array.h"
 
 void ptArray(Array* arr, ofstream& out);
+void ptSort(Array* arr);
 
 int main(int argc, char* argv[])
 {
@@ -28,6 +29,9 @@ int main(int argc, char* argv[])
 	A.In(in);
 	out << "Fill";
 	A.Out(out);
+	ptArray(&A, out);
+	out << "\n\nSort";
+	ptSort(&A);
 	ptArray(&A, out);
 	A.Clear();
 	out << "\n\nEmpty" << endl;
