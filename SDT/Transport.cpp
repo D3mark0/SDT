@@ -53,3 +53,7 @@ Transport* TransportFactory::In(ifstream& in)
 	return t;
 
 }
+
+namespace {
+	TrainFactory tf;
+}

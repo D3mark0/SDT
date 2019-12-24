@@ -15,7 +15,7 @@ public:
 
 class AirplaneFactory : public TransportFactory {
 public:
-	AirplaneFactory() :TransportFactory(1) { }
+	AirplaneFactory() :TransportFactory(2) { }
 
 	Transport* Create(int key) {
 		if (key == mark)
