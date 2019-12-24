@@ -29,9 +29,9 @@ void ptArray(Array* arr, ofstream& out)
 {
 	int n = arr->n;
 	for (int i = 0; i < n; i++) {
-		if (arr[i] != nullptr) {
+		if (arr->array[i] != nullptr) {
 			out << "\n\n---" << i << " element---" << endl;
-			ptElement(arr[i], out);
+			ptElement(arr->array[i], out);
 		}
 	}
 }
