@@ -19,3 +19,7 @@ void Train::Out(ofstream& out)
 	out << "\n***Train***\nQuantity: " << quantity;
 	Transport::Out(out);
 }
+
+namespace {
+	TrainFactory tf;
+}

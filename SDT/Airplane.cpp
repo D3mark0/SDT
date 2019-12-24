@@ -20,3 +20,7 @@ void Airplane::Out(ofstream& out)
 	out << "\n***Airplane***\nRange: " << range << "\nCarrying: " << carrying;
 	Transport::Out(out);
 }
+
+namespace {
+	AirplaneFactory af;
+}
