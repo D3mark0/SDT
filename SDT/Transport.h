@@ -11,6 +11,7 @@ public:
 
 	virtual void In(ifstream& in);
 	virtual void Out(ofstream& out);
+	virtual int ClassCheck() = 0;
 };
 
 class TransportFactory

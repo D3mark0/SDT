@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Airplane.cpp" />
+    <ClCompile Include="AirplaneOut.cpp" />
     <ClCompile Include="Array.cpp" />
     <ClCompile Include="Element.cpp" />
     <ClCompile Include="SDT.cpp" />

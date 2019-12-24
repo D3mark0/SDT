@@ -11,6 +11,7 @@ public:
 
 	void In(ifstream& in);
 	void Out(ofstream& out);
+	int ClassCheck() { return 2; };
 };
 
 class AirplaneFactory : public TransportFactory {

@@ -9,6 +9,8 @@ using namespace std;
 #include "Element.h"
 #include "Array.h"
 
+void aoArray(Array* arr, ofstream& out);
+
 int main(int argc, char* argv[])
 {
 	if (argc != 3)
@@ -25,7 +27,7 @@ int main(int argc, char* argv[])
 	Array A;
 	A.In(in);
 	out << "Fill";
-	A.Out(out);
+	aoArray(&A, out);
 	A.Clear();
 	out << "\n\nEmpty" << endl;
 

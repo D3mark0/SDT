@@ -10,6 +10,7 @@ public:
 
 	void In(ifstream& in);
 	void Out(ofstream& out);
+	int ClassCheck() { return 1; };
 };
 
 class TrainFactory : public TransportFactory {
